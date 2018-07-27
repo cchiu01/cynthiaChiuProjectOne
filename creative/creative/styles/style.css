@@ -189,22 +189,22 @@ i.fa-shopping-bag {
 .carousel wrapper {
     
 }
-.carousel .wrapper::before {
+.carousel .container::before {
     font-family: "Font Awesome 5 Free";
     content:"\f104";
     position: absolute;
     color:#000000;
     font-size: 48px;
-    top:50%;
+    /* top:50%; */
 }
 
-.carousel .wrapper::after {
+.carousel .container::after {
     font-family: "Font Awesome 5 Free";
     content:"\f105";
     position: absolute;
     color:#000000;
     font-size: 48px;
-    top:50%;
+    /* top:50%; */
     /* right:0; */
 }
 
