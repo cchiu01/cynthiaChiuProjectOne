@@ -11,25 +11,29 @@ html {
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .wrapper {
-    max-width: 1080px;
+    max-width: 1440px;
     margin: 0 auto;
-    width:80%;
+    width: 90%;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: 6.0rem;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 3.8rem;
+    font-weight: 700;
 }
 
 h3 {
@@ -38,14 +42,16 @@ h3 {
 
 h4 {
     font-size: 2.4rem;
+    
 }
 
 h5 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
 }
 
 h6 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    text-transform: lowercase;
 }
 
 
@@ -62,6 +68,10 @@ header {
     padding-top:1px;
 }
 
+header .wrapper {
+    margin-top: 40px;
+}
+
 header ul {
     padding:0;
     position:relative;
@@ -75,32 +85,28 @@ header li {
 header a {
     text-decoration: none;
     color: #000000;
+    font-weight: 400;
+    font-family: Montserrat;
 
-}
-
-nav.wrapper {
-    /* position:relative; */
-    
 }
 
 header .navLeft, header .navLogo, header .navRight {
     float:left;
-    /* position:absolute;
-    top:50%;
-    transform:translateY(-50%); */
+    vertical-align: middle;
 }
 
-.navLeft li, .navRight li {
-    margin: 0 10px;
-    
-    
+.navLeft, .navRight {
+    width:20%
+}
+
+.navLeft li, .navRight li { 
+    margin-right: 30px; 
 }
 
 header .navLogo {
-    width: 200px;
+    width: 60%;
     text-align:center;
-    padding-left: 50px;
-    
+    margin: 0 auto;
 }
 
 .navLogo a:hover {
@@ -108,21 +114,17 @@ header .navLogo {
 }
 
 header .navRight {
-    float: right;
-    /* top:50%;
-    transform:translateY(-50%); */
-    
+    text-align: right;    
 }
 
 
 header h2{
-     margin: 0;
-     text-transform: uppercase;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 header a:hover {
     text-decoration: line-through;
-    
 }
 
 header i {
@@ -134,12 +136,14 @@ i.fa-shopping-bag {
 }
 
 .counter {
-  background: #c3dab7;
-  border-radius:50%;
-  height: 1.7rem;
-  width: 1.7rem;
-  text-align:center;
-  position:absolute;
+    background: #c3dab7;
+    border-radius:50%;
+    height: 1.7rem;
+    width: 1.7rem;
+    text-align:center;
+    position:absolute;
+    bottom: -10px;
+    right: 21px;
 }
 /* Header ends */
 
@@ -147,20 +151,29 @@ i.fa-shopping-bag {
 
 .mission {
     background:#c3dab7;
-    padding: 200px 0 100px 0
+    padding: 300px 0 100px 0
 }
 
-.image {
+.mission .wrapper {
+    width:70%;
+}
+
+.image.container {
     width:50%;
-    /* height: 4%; */
     margin: 0 auto;
     position: relative;
 }
 
+.mission .mainPic {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+
 .decor {
     position: absolute;
-    top: -96px;
-    left: -120px;
+    top: -110px;
+    left: -42px;
     width: 40%;
 }
 
@@ -170,47 +183,63 @@ i.fa-shopping-bag {
     font-weight: 400;
 }
 
-.mission .content {
+.mission .content.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.mission .branding, .mission .design {
     float:left;
-    margin:20px;
+    margin: 50px 20px;
     width: calc(50% - 40px); 
     text-align:center;
 }
 
+
+.mission p {
+    line-height: 24px;
+    padding: 0 50px;
+}
 /* mission section ends */
 
 /* carousel section */
 
 .carousel {
     margin: 150px 0;
-    position:relative;
-}
-
-.carousel wrapper {
     
 }
-.carousel .container::before {
-    font-family: "Font Awesome 5 Free";
+
+.carousel .wrapper {
+    position:relative;
+}
+.carousel .wrapper::before {
+    font-family: "Font Awesome 5 free";
     content:"\f104";
     position: absolute;
     color:#000000;
-    font-size: 48px;
-    /* top:50%; */
+    font-weight:900;
+    font-size: 4.8rem;
+    top: 50%;
+    transform: translatey(-50%);
 }
 
-.carousel .container::after {
+.carousel .wrapper::after {
     font-family: "Font Awesome 5 Free";
     content:"\f105";
     position: absolute;
-    color:#000000;
-    font-size: 48px;
-    /* top:50%; */
-    /* right:0; */
+    color:#999999;
+    font-weight:900;
+    font-size: 4.8rem;
+    bottom: 50%;
+    right:0;
+    transform: translatey(50%);
+    
 }
 
 .carousel .container {
-    width:25%;
+    width:20%;
     margin: 0 auto;
+    
     
 }
 
@@ -220,13 +249,271 @@ i.fa-shopping-bag {
 }
 
 .carousel h6 {
-    margin: 40px auto;
-    width: 70%;
+    margin: 60px auto;
+    width: 65%;
     font-family: 'Open Sans', sans-serif;
     color:#666666;
     font-weight:400;
     text-align: center;
     line-height: 2.5rem;;
+}
+
+/* features section */
+main {
+    background-image: url(../assets/home-4.jpeg);
+    background-position: center;
+    background-repeat: no-repat;
+    background-size: cover;
+    padding: 100px 0;
+    min-height: 90vh;
+    display: table;
+}
+
+main .container {
+    margin: 60px 0;
+}
+
+main .contentContainer {
+    float: right;
+    width: 45%;
+    margin-right: 100px;
+}
+
+.features .left, .features .right {
+    width: calc(50% - 20px);
+    float: left;
     
 }
 
+.faContainer {
+    width:calc(25%);
+}
+
+.featureContainer {
+    width: calc(75%);
+}
+
+.features .faContainer, .features .featureContainer {
+    float: left;
+}
+
+.featureContainer h5 {
+    margin: 10px 0;
+}
+
+.features .fas {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+    text-align: center;
+    /* line-height: 100px; */
+    vertical-align: middle;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.features p {
+    color:#999999;
+    line-height: 2.4rem;
+}
+
+/* team section */
+
+.team {
+    padding: 100px 0;
+}
+
+.team h4 {
+    /* margin: 100px 0; */
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.team h6 {
+    text-transform: uppercase;
+}
+
+.left, .right {
+    width:calc(50% - 20px);
+    float: left;
+}
+
+.left {
+    margin-right: 20px;
+}
+
+.right {
+    margin-left: 20px;
+}
+
+.teamDescription {
+    background: #f6f6f6;
+    width: calc(100%);
+    height: 340px;
+    padding: 70px 50px 40px;
+    
+} 
+
+.teamDescription, .right .five, .right .six {
+    margin-bottom: 40px;
+}
+
+.teamDescription {
+    line-height: 24px;
+}
+
+.headshot, .right .joinUs {
+    width: calc(50% - 20px);
+    height: 340px; 
+    float: left;
+}
+
+.left .seven, .right .five, .right .nine {
+    margin-right: 20px;
+}
+
+.left .eight, .right .six, .right .joinUs {
+    margin-left: 20px;
+}
+
+.team img {
+    width: 100%;
+}
+
+.joinUs {
+    display: table;
+}
+
+.team a {
+    text-decoration: none;
+    text-align: center;
+    font-family: Montserrat;
+    color:#000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* portfolio section */
+
+.portfolio .container {
+    display: table;
+    width: 50%;
+    height: 900px;
+    float: left;
+    /* padding-bottom: 100px; */
+}
+
+.portfolio .content {
+    display: table-cell;
+    background: rgb(195, 218, 183);
+    padding: 150px 170px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.portfolio img {
+    width: 100%;
+    display:block;
+    max-height:900px;
+}
+
+.portfolio p {
+    margin: 50px 0;
+    padding: 0px 80px;
+}
+
+.portfolio button {
+    background: white;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.portfolio a {
+    text-decoration: none; 
+    color: inherit;
+    padding: 30px 0;
+}
+
+/* footer section */
+footer {
+    padding: 100px 0;
+    background: rgb(51, 51, 51);
+    color: whitesmoke;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer div:nth-child(n+2) {
+    float: left;
+}
+
+footer .contact {
+    width: calc(42%);
+    float: left;
+}
+
+footer .posts {
+    width: calc(18%);
+}
+
+footer .subscribe {
+    width: calc(40%);
+}
+
+.contact li {
+    list-style: none;
+    line-height: 2.4rem;
+}
+
+footer .social {
+    font-size: 2.0rem;
+}
+
+footer .social li {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+footer .social a {
+    color: whitesmoke;
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+footer .posts li {
+    margin-bottom: 1rem;
+    line-height: 2.4rem;
+    list-style-position: inside;
+    /* line-height: 3.4rem; */
+    /* text-align: center; */
+}
+
+footer .posts h5 {
+    text-align: center;
+    /* margin-top: 20.7px; */
+}
+
+footer .subscribe {
+    text-align: right;
+}
+
+footer .creative {
+    clear: both;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0;
+    letter-spacing: 7px;
+
+}
