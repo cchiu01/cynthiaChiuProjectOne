@@ -550,11 +550,17 @@ footer .creative {
 }
 
 .background.thin .wrapper{
-    display: relative;
+    position: relative;
 }
 
 .background.thin .heading {
-    display: absolute;
+    position: absolute;
+    top: 145px;
+}
+
+.background.thin h1 {
+    line-height: 5.5rem;
+    max-width: 20%;
 }
 
 .background.full {
@@ -562,6 +568,60 @@ footer .creative {
     height:80vh;
 }
 
+.contactInfo .container {
+    width: 50%;
+}
 
+.contactInfo h5, .contactMethod h6, .contactForm h5 {
+    font-weight: 700;
+}
+
+.contactInfo h5 {
+    margin-top: 130px;
+}
+
+.contactInfo p, .contactForm p {
+    color:#666666;
+}
+.contactInfo .container p, .contactForm p {
+    margin: 0;
+}
+
+.contactMethod.container {
+    width: 80%;
+}
+
+.contactMethod .method {
+    float: left;
+    width: calc(33% -30px);
+    margin: 30px 60px 30px 30px;
+
+}
+
+.contactMethod i{
+    font-size: 3rem;
+}
+
+.contactMethod h6 {
+    letter-spacing:5px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+/* 
+ {
+    margin: 0;
+} */
+
+form.message div {
+    
+}
+
+form.message
+
+form.messsage .container input {
+    float: left;
+    width:calc(33% - 10px);
+    margin: 20px 10px 0;
+}
 
 /* contact page ends */
