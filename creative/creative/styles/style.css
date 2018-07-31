@@ -42,7 +42,7 @@ h3 {
 }
 
 h4 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     
 }
 
@@ -196,9 +196,7 @@ i.fa-shopping-bag {
     text-align:center;
 }
 
-
 .mission p {
-    /* line-height: 24px; */
     padding: 0 20px;
 }
 /* mission section ends */
@@ -273,14 +271,23 @@ main .container {
 
 main .contentContainer {
     float: right;
-    width: 45%;
-    margin-right: 100px;
+    width: calc(50% - 80px);
+    margin-right: 80px;
 }
 
+
 .features .left, .features .right {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
     float: left;
     
+}
+
+.features .left {
+    margin-right: 10px;
+}
+
+.features .right {
+    margin-left: 10px;
 }
 
 .faContainer {
@@ -300,15 +307,15 @@ main .contentContainer {
     margin: 0;
 }
 
-.features .fas {
-    width: 55px;
-height: 55px;
-border-radius: 50%;
-border: 2px solid black;
-text-align: center;
-vertical-align: middle;
-padding: 13px;
-font-size: 25px;
+.features .fas, .features .far {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12.5px;
+    font-size: 20px;
 }
 
 .features p {
@@ -318,11 +325,11 @@ font-size: 25px;
 /* team section */
 
 .team {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .team h4 {
-    /* margin: 100px 0; */
+    margin: 100px 0; 
     text-align: center;
     margin-bottom: 100px;
 }
@@ -331,24 +338,24 @@ font-size: 25px;
     text-transform: uppercase;
 }
 
-.left, .right {
-    width:calc(50% - 20px);
-    float: left;
-}
-
-.left {
+.team .left {
     margin-right: 20px;
 }
 
-.right {
+.team .right {
     margin-left: 20px;
+}
+
+.team .left, .team .right {
+    float: left;
+    width: calc(50% - 20px);
 }
 
 .teamDescription {
     background: #f6f6f6;
     width: calc(100%);
-    height: 340px;
-    padding: 70px 50px 40px;
+    /* height: 340px; */
+    padding: 50px 30px 25px;
     
 } 
 
@@ -356,13 +363,9 @@ font-size: 25px;
     margin-bottom: 40px;
 }
 
-.teamDescription {
-    line-height: 24px;
-}
-
 .headshot, .right .joinUs {
-    width: calc(50% - 20px);
-    height: 340px; 
+    width: calc(50vw - 20px);
+    height: 50vw; 
     float: left;
 }
 
@@ -400,9 +403,8 @@ font-size: 25px;
 .portfolio .container {
     display: table;
     width: 50%;
-    height: 900px;
+    height: 649px;
     float: left;
-    /* padding-bottom: 100px; */
 }
 
 .portfolio .content {
@@ -415,19 +417,18 @@ font-size: 25px;
 
 .portfolio img {
     width: 100%;
-    display:block;
-    max-height:900px;
+    display:block;    
 }
 
 .portfolio p {
-    margin: 50px 0;
-    padding: 0px 80px;
+    margin: 40px 0;
+    color: #666666;
 }
 
 .portfolio button {
     background: white;
     border: none;
-    padding: 20px;
+    padding: 10px 15px;
     text-transform: uppercase;
     font-family: Montserrat;
     font-weight: 700;
@@ -437,12 +438,12 @@ font-size: 25px;
 .portfolio a {
     text-decoration: none; 
     color: inherit;
-    padding: 30px 0;
+    /* padding:  */
 }
 
 /* footer section */
 footer {
-    padding: 100px 0;
+    padding: 100px 0 1px;
     background: rgb(51, 51, 51);
     color: whitesmoke;
 }
@@ -456,12 +457,12 @@ footer div:nth-child(n+2) {
 }
 
 footer .contact {
-    width: calc(42%);
+    width: calc(40%);
     float: left;
 }
 
 footer .posts {
-    width: calc(18%);
+    width: calc(20%);
 }
 
 footer .subscribe {
@@ -470,16 +471,15 @@ footer .subscribe {
 
 .contact li {
     list-style: none;
-    line-height: 2.4rem;
 }
 
 footer .social {
-    font-size: 2.0rem;
+    font-size: 1.5rem;
 }
 
 footer .social li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     
 }
 
@@ -490,16 +490,11 @@ footer .social a {
 }
 
 footer .posts li {
-    margin-bottom: 1rem;
-    line-height: 2.4rem;
     list-style-position: inside;
-    /* line-height: 3.4rem; */
-    /* text-align: center; */
 }
 
 footer .posts h5 {
     text-align: center;
-    /* margin-top: 20.7px; */
 }
 
 footer .subscribe {
@@ -513,13 +508,15 @@ footer .subscribe form {
 
 footer .subscribe input {
     float: left;
+    height: 26px;
+    padding: 12px;
 }
 
 footer .subscribe button {
     background:#c3dab7;
     height: 26px;
     display: inline-block;
-    width: 49px;
+    width: 34px;
     border: none;
 }
 
@@ -527,7 +524,7 @@ footer .creative {
     clear: both;
     text-align: center;
     text-transform: uppercase;
-    padding: 100px 0;
+    padding: 100px 0 40px;
     letter-spacing: 7px;
 
 }
