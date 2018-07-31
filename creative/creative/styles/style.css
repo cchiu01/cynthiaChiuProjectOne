@@ -59,6 +59,10 @@ img {
     display: block;
 }
 
+input[type="submit"]{
+    cursor:pointer;
+}
+
 /* General CSS ends */
 
 
@@ -539,6 +543,10 @@ footer .creative {
 /* contact page begins */
 /* contact us begins */
 
+.contactUs {
+    padding-bottom: 60px
+}
+
 .background {
     background-size: cover;
     background-repeat: no-repeat;
@@ -589,13 +597,19 @@ footer .creative {
 
 .contactMethod.container {
     width: 80%;
+    margin-top: 50px;
 }
 
 .contactMethod .method {
     float: left;
     width: calc(33% -30px);
-    margin: 30px 60px 30px 30px;
+    padding: 30px 60px 30px 30px;
 
+}
+
+.contactMethod .method2{
+    border-left: 1px solid rgba(204, 204, 204, 0.5);
+    border-right: 1px solid rgba(204, 204, 204, 0.5);
 }
 
 .contactMethod i{
@@ -607,10 +621,6 @@ footer .creative {
     text-transform: uppercase;
     margin: 20px 0px;
 }
-/* 
- {
-    margin: 0;
-} */
 
 form.message .container input{
     float: left;
@@ -636,6 +646,15 @@ form.message .container input{
 
 .contactForm .send {
     display: block;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight:700;
+    margin: 10px 0;
+    padding: 5px 0
 }
 
 /* Firefox > 19 */
@@ -646,7 +665,6 @@ input::-moz-placeholder {
 input:focus::-moz-placeholder {
     color: black;
 }
-
 
 
 
