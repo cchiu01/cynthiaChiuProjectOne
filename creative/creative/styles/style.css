@@ -612,16 +612,42 @@ footer .creative {
     margin: 0;
 } */
 
-form.message div {
+form.message .container input{
+    float: left;
+    width:calc(33% - 10px);
+    margin: 20px 10px 20px 0;
     
 }
 
-form.message
 
-form.messsage .container input {
-    float: left;
-    width:calc(33% - 10px);
-    margin: 20px 10px 0;
+.contactForm textarea, .contactForm input:not(.send){
+    padding-bottom: 10px;
+    line-height: 1.5rem;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
+
+.contactForm textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .send {
+    display: block;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+
+input:focus::-moz-placeholder {
+    color: black;
+}
+
+
+
 
 /* contact page ends */
