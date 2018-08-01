@@ -105,7 +105,7 @@ header a {
     text-decoration: none;
     color: #000000;
     font-weight: 400;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -197,7 +197,7 @@ i.fa-shopping-bag {
 }
 
 .mission h5 {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin: 10px 0;
 }
@@ -407,7 +407,7 @@ i.fa-shopping-bag {
 .team a {
     text-decoration: none;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color:#000000;
     font-size: 16px;
     font-weight: 400;
@@ -453,7 +453,7 @@ i.fa-shopping-bag {
     border: none;
     padding: 10px 15px;
     text-transform: uppercase;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 24px;
 }
@@ -658,7 +658,7 @@ form.message .container input{
     margin: 20px 10px 20px 0;
 }
 
-.contactForm textarea, .contactForm input:not(.send){
+.commentsForm textarea, .contactForm textarea, .contactForm input:not(.send), .commentsForm input:not(.send){
     padding-bottom: 10px;
     line-height: 1.5rem;
     border: 0;
@@ -667,12 +667,12 @@ form.message .container input{
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-.contactForm textarea {
+.commentsForm textarea,.contactForm textarea {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.contactForm .send {
+.commentsForm .send, .contactForm .send {
     display: block;
     border: 0;
     outline: 0;
@@ -706,4 +706,254 @@ input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
     padding-top:1px;
 }
 
+/* main blog post section */
+
+.blogPost h1 {
+    font-size: 5.5rem;
+    margin-top: 100px
+}
+
+.blogPost ul {
+    padding:0
+}
+
+.blogPost li {
+    display: inline-block;
+}
+
+.blogPost a, .blogPost li {
+    text-decoration: none;
+    color: #999999;
+    text-transform: capitalize;
+}
+
+.blogPost a.howTo {
+    color:#000;
+}
+
+.articleInfoContainer {
+    margin: 80px 0;
+}
+
+.authorContainer {
+    width: 50%;
+    float: left;
+}
+
+.authorContainer img, .authorContainer div {
+    float: left;
+}
+
+.authorContainer img {
+    border-radius: 50%;
+}
+
+.authorContent {
+    /* position: absolute;
+    top:50%;
+    left: 18%;
+    transform: translatey(-50%); */
+    margin: 15.5px 0 15.5px 20px;
+}
+
+.dateContainer, .categoryContainer, .tagsContainer {
+    float: left;
+}
+
+.articleInfoContainer h5 {
+    margin: 0;
+}
+
+.articleInfoContainer p {
+    margin: 1px 0;
+    color: #999999;
+}
+
+.dateContainer {
+    width: calc(16%);
+    margin: 15.5px 0;
+}
+
+.categoryContainer, .tagsContainer {
+    width: calc(17%);
+    margin: 15.5px 0;
+}
+
+.tagsContainer ul {
+    margin: 0;
+}
+
+.blogPost .wrapper {
+    position: relative;
+}
+
+.articleContent::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #999999;
+    opacity:0.5;
+    font-weight: 700;
+    height: 1px;
+    top: 260px
+}
+
+.articleContent h3 {
+    font-size: 1.3rem;
+    text-transform: none;
+    font-weight: 700;
+}
+
+.articleContent p {
+    color:#999999;
+}
+
+.socialContainer h5 {
+    display: inline-block;
+    float: left;
+}
+
+.socialContainer ul {
+    margin: 23px 10px;
+    display: inline-block;
+}
+
+.socialContainer li {
+    margin: 0 5px;
+}
+
+.socialContainer a {
+    color: black;
+    font-size: 1.4rem;
+}
+
+/* related posts section */
+.relatedPosts h2, .comments h2, .commentsForm h2 {
+    font-size: 2.5rem;
+}
+
+.relatedPosts .contentContainer {
+    margin: 80px 0 0px 0;
+}
+
+.relatedPosts .wrapper {
+    position: relative;
+}
+
+.relatedPosts .contentContainer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #999999;
+    opacity:0.5;
+    font-weight: 700;
+    height: 1px;
+    top: 50px;
+    left: 0;
+}
+
+.relatedPosts article {
+    float: left;
+    width: calc(33% - 20px);
+    margin:0px 5px 100px 10px;
+}
+.relatedPosts .articleItem{
+    position:relative
+}
+
+.relatedPosts .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 42px;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.relatedPosts img {
+    width:100%;
+}
+
+.relatedPosts a {
+    
+    text-decoration: none;
+    text-align:center;
+    color: white;
+    font-weight: 700;
+}
+
+.relatedPosts h5 {
+    margin: 160px 0;
+}
+
+.articleItem:hover .overlay {
+	display: block;
+}
+
+.articleItem p {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* comments section */
+
+.comments .wrapper {
+    position: relative;
+}
+
+.comments h2 {
+    margin: 0 0 60px 0;
+}
+
+.comments h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #999999;
+    opacity: 0.5;
+    font-weight: 700;
+    height: 1px;
+    top: 45px;
+    left: 0;
+}
+
+.comments .avatar {
+    width: calc(10% - 10px);
+    float: left;
+    margin-right:10px;
+}
+
+.comments .commentContent {
+    width:calc(90% - 10px);
+    margin: 45px 45px 10px;
+
+}
+
+.comments p {
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.comments em {
+    color:#405e31;
+}
+
+.comments .timestamp {
+    font-size:1.2rem;
+    color:  #999999;
+}
+
+.commentsForm h2 {
+    margin: 70px 0 30px;
+}
+
+.commentsForm .send {
+    margin: 20px 0;
+}
+
+.commentsForm {
+    padding-bottom:100px;
+}
+/* blog form styles with contact page form styles */
 /* blog page ends */
