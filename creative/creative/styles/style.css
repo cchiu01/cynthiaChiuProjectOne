@@ -164,6 +164,22 @@ i.fa-shopping-bag {
     bottom: -10px;
     right: 21px;
 }
+
+body {
+    position: relative;
+}
+
+#id::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: black;/*#999999;*/
+    font-weight: 700;
+    height: 10px;
+    /* top: -20px;
+    left: 3px; */
+
+}
 /* Header ends */
 
 /* mission section begins */
@@ -596,6 +612,19 @@ footer .creative {
     top: 145px;
 }
 
+.background.thin .heading::before{
+    
+    content: "";
+    position: absolute;
+    width: 27px;
+    background-color: black;
+    font-weight: 700;
+    height: 3px;
+    top: -20px;
+    left: 3px;
+}
+
+
 .background.thin h1 {
     line-height: 5.5rem;
     max-width: 20%;
@@ -864,7 +893,7 @@ input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
 .relatedPosts .overlay {
     position: absolute;
     top: 0;
-    bottom: 42px;
+    bottom: 43px;
     left: 0;
     right: 0;
     background: rgba(0,0,0,0.5);
